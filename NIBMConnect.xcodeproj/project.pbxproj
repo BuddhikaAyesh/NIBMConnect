@@ -14,6 +14,14 @@
 		4D63F0EB22913E1400461C99 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63F0EA22913E1400461C99 /* HomeViewController.swift */; };
 		4D63F14122916CF400461C99 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63F14022916CF400461C99 /* LoginViewController.swift */; };
 		4D63F14422916D2C00461C99 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63F14322916D2C00461C99 /* LandingViewController.swift */; };
+		B1C26A7D22929FDA00EC597A /* HomeWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C26A7C22929FDA00EC597A /* HomeWorkViewController.swift */; };
+		B1C26A7F2292A01500EC597A /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C26A7E2292A01500EC597A /* ForgotPasswordViewController.swift */; };
+		B1C26A812292A02A00EC597A /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C26A802292A02A00EC597A /* StudentViewController.swift */; };
+		B1C26A832292A09700EC597A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C26A822292A09700EC597A /* Home.storyboard */; };
+		B1C26A852292A0B900EC597A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C26A842292A0B900EC597A /* Login.storyboard */; };
+		B1C26A872292A0D100EC597A /* Students.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C26A862292A0D100EC597A /* Students.storyboard */; };
+		B1C26A892292A0E500EC597A /* MyProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C26A882292A0E500EC597A /* MyProfile.storyboard */; };
+		B1C26A8B2292A0F800EC597A /* HomeWork.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C26A8A2292A0F800EC597A /* HomeWork.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		4D63F0EA22913E1400461C99 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4D63F14022916CF400461C99 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4D63F14322916D2C00461C99 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		B1C26A7C22929FDA00EC597A /* HomeWorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkViewController.swift; sourceTree = "<group>"; };
+		B1C26A7E2292A01500EC597A /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		B1C26A802292A02A00EC597A /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
+		B1C26A822292A09700EC597A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		B1C26A842292A0B900EC597A /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		B1C26A862292A0D100EC597A /* Students.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Students.storyboard; sourceTree = "<group>"; };
+		B1C26A882292A0E500EC597A /* MyProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyProfile.storyboard; sourceTree = "<group>"; };
+		B1C26A8A2292A0F800EC597A /* HomeWork.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeWork.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,35 +74,29 @@
 		4D63F0D222913C2A00461C99 /* NIBMConnect */ = {
 			isa = PBXGroup;
 			children = (
-				4D63F0E822913D0400461C99 /* StoryBoard */,
-				4D63F0E722913CE000461C99 /* Controller */,
-				4D63F0E622913CD500461C99 /* Model */,
-				4D63F0E522913CC000461C99 /* View */,
 				4D63F0D322913C2A00461C99 /* AppDelegate.swift */,
+				B1C26A7A22929F0400EC597A /* Com */,
 				4D63F0DA22913C2B00461C99 /* Assets.xcassets */,
 				4D63F0DF22913C2B00461C99 /* Info.plist */,
 			);
 			path = NIBMConnect;
 			sourceTree = "<group>";
 		};
-		4D63F0E522913CC000461C99 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		4D63F0E622913CD500461C99 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
+			name = Model;
+			path = ../../../Model;
 			sourceTree = "<group>";
 		};
 		4D63F0E722913CE000461C99 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4D63F14222916D1300461C99 /* LandingPage */,
+				4D63F14322916D2C00461C99 /* LandingViewController.swift */,
+				B1C26A7822929C6C00EC597A /* Homework */,
+				B1C26A7922929C7900EC597A /* ForgetPassword */,
+				B1C26A7722929C3C00EC597A /* Student */,
 				4D63F13F2291662800461C99 /* Login */,
 				4D63F0E922913DFA00461C99 /* Home */,
 			);
@@ -98,6 +108,12 @@
 			children = (
 				4D63F0D722913C2A00461C99 /* Main.storyboard */,
 				4D63F0DC22913C2B00461C99 /* LaunchScreen.storyboard */,
+				B1C26A842292A0B900EC597A /* Login.storyboard */,
+				B1C26A862292A0D100EC597A /* Students.storyboard */,
+				B1C26A822292A09700EC597A /* Home.storyboard */,
+				B1C26A882292A0E500EC597A /* MyProfile.storyboard */,
+				B1C26A8A2292A0F800EC597A /* HomeWork.storyboard */,
+				4D63F0E622913CD500461C99 /* Model */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -118,12 +134,53 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		4D63F14222916D1300461C99 /* LandingPage */ = {
+		B1C26A7722929C3C00EC597A /* Student */ = {
 			isa = PBXGroup;
 			children = (
-				4D63F14322916D2C00461C99 /* LandingViewController.swift */,
+				B1C26A802292A02A00EC597A /* StudentViewController.swift */,
 			);
-			path = LandingPage;
+			path = Student;
+			sourceTree = "<group>";
+		};
+		B1C26A7822929C6C00EC597A /* Homework */ = {
+			isa = PBXGroup;
+			children = (
+				B1C26A7C22929FDA00EC597A /* HomeWorkViewController.swift */,
+			);
+			path = Homework;
+			sourceTree = "<group>";
+		};
+		B1C26A7922929C7900EC597A /* ForgetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				B1C26A7E2292A01500EC597A /* ForgotPasswordViewController.swift */,
+			);
+			path = ForgetPassword;
+			sourceTree = "<group>";
+		};
+		B1C26A7A22929F0400EC597A /* Com */ = {
+			isa = PBXGroup;
+			children = (
+				B1C26A7B22929F0F00EC597A /* NIBM */,
+			);
+			path = Com;
+			sourceTree = "<group>";
+		};
+		B1C26A7B22929F0F00EC597A /* NIBM */ = {
+			isa = PBXGroup;
+			children = (
+				B1C26A8C2292A2AD00EC597A /* View */,
+				4D63F0E822913D0400461C99 /* StoryBoard */,
+				4D63F0E722913CE000461C99 /* Controller */,
+			);
+			path = NIBM;
+			sourceTree = "<group>";
+		};
+		B1C26A8C2292A2AD00EC597A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +244,11 @@
 				4D63F0DE22913C2B00461C99 /* LaunchScreen.storyboard in Resources */,
 				4D63F0DB22913C2B00461C99 /* Assets.xcassets in Resources */,
 				4D63F0D922913C2A00461C99 /* Main.storyboard in Resources */,
+				B1C26A852292A0B900EC597A /* Login.storyboard in Resources */,
+				B1C26A892292A0E500EC597A /* MyProfile.storyboard in Resources */,
+				B1C26A872292A0D100EC597A /* Students.storyboard in Resources */,
+				B1C26A8B2292A0F800EC597A /* HomeWork.storyboard in Resources */,
+				B1C26A832292A09700EC597A /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +261,10 @@
 			files = (
 				4D63F14122916CF400461C99 /* LoginViewController.swift in Sources */,
 				4D63F0D422913C2A00461C99 /* AppDelegate.swift in Sources */,
+				B1C26A7F2292A01500EC597A /* ForgotPasswordViewController.swift in Sources */,
+				B1C26A7D22929FDA00EC597A /* HomeWorkViewController.swift in Sources */,
 				4D63F14422916D2C00461C99 /* LandingViewController.swift in Sources */,
+				B1C26A812292A02A00EC597A /* StudentViewController.swift in Sources */,
 				4D63F0EB22913E1400461C99 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
