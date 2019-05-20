@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import GoogleSignIn
 
 class LandingViewController: UIViewController {
 
@@ -14,6 +17,21 @@ class LandingViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        AppTempData.userHandle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            if user == nil {
+                self.performSegue(withIdentifier: "showLogin", sender: nil)
+            } else {
+                //                self.performSegue(withIdentifier: "showHome", sender: nil)
+                self.performSegue(withIdentifier: "showLogin", sender: nil)
+            }
+        }
+        
+        func viewWillAppear(_ animated: Bool) {
+            AppTempData.userHandle = Auth.auth().addStateDidChangeListener { (auth, user) in
+                // ...
+                
+            }
+        }
     }
     
 
