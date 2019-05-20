@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		474CDC29B2F1BE4659B31497 /* Pods_NIBMConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD45910DF4B5E42D320C1D3E /* Pods_NIBMConnect.framework */; };
 		4D63F0D422913C2A00461C99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63F0D322913C2A00461C99 /* AppDelegate.swift */; };
 		4D63F0D922913C2A00461C99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D63F0D722913C2A00461C99 /* Main.storyboard */; };
 		4D63F0DB22913C2B00461C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D63F0DA22913C2B00461C99 /* Assets.xcassets */; };
@@ -22,6 +23,8 @@
 		B1C26A872292A0D100EC597A /* Students.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C26A862292A0D100EC597A /* Students.storyboard */; };
 		B1C26A892292A0E500EC597A /* MyProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C26A882292A0E500EC597A /* MyProfile.storyboard */; };
 		B1C26A8B2292A0F800EC597A /* HomeWork.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C26A8A2292A0F800EC597A /* HomeWork.storyboard */; };
+		B1C26A8F2292A79800EC597A /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C26A8E2292A79800EC597A /* MyProfileViewController.swift */; };
+		B1C26A912292AA2000EC597A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1C26A902292AA2000EC597A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,11 @@
 		B1C26A862292A0D100EC597A /* Students.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Students.storyboard; sourceTree = "<group>"; };
 		B1C26A882292A0E500EC597A /* MyProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyProfile.storyboard; sourceTree = "<group>"; };
 		B1C26A8A2292A0F800EC597A /* HomeWork.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeWork.storyboard; sourceTree = "<group>"; };
+		B1C26A8E2292A79800EC597A /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		B1C26A902292AA2000EC597A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CB5B899E0EB275BFE715A49C /* Pods-NIBMConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.debug.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.debug.xcconfig"; sourceTree = "<group>"; };
+		CD45910DF4B5E42D320C1D3E /* Pods_NIBMConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NIBMConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE01E785FD24D0E0F42B3802 /* Pods-NIBMConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.release.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				474CDC29B2F1BE4659B31497 /* Pods_NIBMConnect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +69,8 @@
 			children = (
 				4D63F0D222913C2A00461C99 /* NIBMConnect */,
 				4D63F0D122913C2A00461C99 /* Products */,
+				B122168C183B73B5BE121F56 /* Pods */,
+				FD71C988DFBA3F9AC5BFC71C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +85,7 @@
 		4D63F0D222913C2A00461C99 /* NIBMConnect */ = {
 			isa = PBXGroup;
 			children = (
+				B1C26A902292AA2000EC597A /* GoogleService-Info.plist */,
 				4D63F0D322913C2A00461C99 /* AppDelegate.swift */,
 				B1C26A7A22929F0400EC597A /* Com */,
 				4D63F0DA22913C2B00461C99 /* Assets.xcassets */,
@@ -93,6 +105,7 @@
 		4D63F0E722913CE000461C99 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B1C26A8D2292A76800EC597A /* MyProfile */,
 				4D63F14322916D2C00461C99 /* LandingViewController.swift */,
 				B1C26A7822929C6C00EC597A /* Homework */,
 				B1C26A7922929C7900EC597A /* ForgetPassword */,
@@ -132,6 +145,16 @@
 				4D63F14022916CF400461C99 /* LoginViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		B122168C183B73B5BE121F56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB5B899E0EB275BFE715A49C /* Pods-NIBMConnect.debug.xcconfig */,
+				FE01E785FD24D0E0F42B3802 /* Pods-NIBMConnect.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		B1C26A7722929C3C00EC597A /* Student */ = {
@@ -183,6 +206,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B1C26A8D2292A76800EC597A /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				B1C26A8E2292A79800EC597A /* MyProfileViewController.swift */,
+			);
+			path = MyProfile;
+			sourceTree = "<group>";
+		};
+		FD71C988DFBA3F9AC5BFC71C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD45910DF4B5E42D320C1D3E /* Pods_NIBMConnect.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D63F0E222913C2B00461C99 /* Build configuration list for PBXNativeTarget "NIBMConnect" */;
 			buildPhases = (
+				882E2E9EAAFA2084C7CFB34C /* [CP] Check Pods Manifest.lock */,
 				4D63F0CC22913C2A00461C99 /* Sources */,
 				4D63F0CD22913C2A00461C99 /* Frameworks */,
 				4D63F0CE22913C2A00461C99 /* Resources */,
+				7B3D798B1F36D579D7B4AC90 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,6 +284,7 @@
 			files = (
 				4D63F0DE22913C2B00461C99 /* LaunchScreen.storyboard in Resources */,
 				4D63F0DB22913C2B00461C99 /* Assets.xcassets in Resources */,
+				B1C26A912292AA2000EC597A /* GoogleService-Info.plist in Resources */,
 				4D63F0D922913C2A00461C99 /* Main.storyboard in Resources */,
 				B1C26A852292A0B900EC597A /* Login.storyboard in Resources */,
 				B1C26A892292A0E500EC597A /* MyProfile.storyboard in Resources */,
@@ -253,6 +295,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B3D798B1F36D579D7B4AC90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		882E2E9EAAFA2084C7CFB34C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NIBMConnect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D63F0CC22913C2A00461C99 /* Sources */ = {
@@ -265,6 +356,7 @@
 				B1C26A7D22929FDA00EC597A /* HomeWorkViewController.swift in Sources */,
 				4D63F14422916D2C00461C99 /* LandingViewController.swift in Sources */,
 				B1C26A812292A02A00EC597A /* StudentViewController.swift in Sources */,
+				B1C26A8F2292A79800EC597A /* MyProfileViewController.swift in Sources */,
 				4D63F0EB22913E1400461C99 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +501,7 @@
 		};
 		4D63F0E322913C2B00461C99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB5B899E0EB275BFE715A49C /* Pods-NIBMConnect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -427,6 +520,7 @@
 		};
 		4D63F0E422913C2B00461C99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE01E785FD24D0E0F42B3802 /* Pods-NIBMConnect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
