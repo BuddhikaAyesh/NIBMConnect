@@ -12,12 +12,35 @@ import GoogleSignIn
 
 class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate  {
 
+    
+    @IBOutlet weak var emailTxt: UITextField!
+    @IBOutlet weak var pwdTxt: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().delegate = self
     }
     
+    @IBAction func loginClick(_ sender: Any) {
+        if (emailTxt.text == "" || pwdTxt.text == "") {
+            print("Please Fill in the details")
+            return
+            
+        }else{
+            
+            Auth.auth().signIn(withEmail: emailTxt.text!, password: pwdTxt.text!) { [weak self] user, error in
+               // guard let strongSelf = self else { return }
+                
+                if (error != nil){
+                    print("Error")
+                }else{
+                    self!.performSegue(withIdentifier: "showHome", sender: self)
+                }
+            }
+            
+            
+        }
+    }
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
         // ...
         if let error = error {
@@ -49,17 +72,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
         
 
         // Do any additional setup after loading the view.
-    }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 

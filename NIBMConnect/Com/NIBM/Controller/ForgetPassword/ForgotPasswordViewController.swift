@@ -7,16 +7,37 @@
 //
 
 import UIKit
-
+import FirebaseAuth
+import Firebase
 class ForgotPasswordViewController: UIViewController {
 
+    @IBOutlet weak var emailTxt: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func close(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func getPassword(_ sender: Any) {
+        if emailTxt.text!.isEmpty {
+            print("please enter a email")
+            return
+        }else {
+            
+            Auth.auth().sendPasswordReset(withEmail: emailTxt.text!) { (error) in
+                if (error != nil){
+                    print(error?.localizedDescription)
+                    
+                }else{
+                    self.dismiss(animated: true, completion: nil)
+                }
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -1,26 +1,27 @@
 //
-//  MyProfileViewController.swift
+//  AddHomeworkViewController.swift
 //  NIBMConnect
 //
-//  Created by R F on 5/20/19.
+//  Created by R F on 5/26/19.
 //  Copyright © 2019 Buddhika Ayesh -COMBBSCComp171P-014. All rights reserved.
 //
 
 import UIKit
 
-class MyProfileViewController: UIViewController {
+class AddHomeworkViewController: UIViewController {
 
+    @IBOutlet weak var titleHw: UITextField!
+    @IBOutlet weak var descriptHw: UITextField!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func close(_ sender: Any) {
-       // self.dismiss(animated: true, completion: nil)
-        let loginVC = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        self.navigationController?.pushViewController(loginVC, animated: true)
-   
+    @IBAction func addHw(_ sender: Any) {
+        let newHomeWork = HomeWork(titl: titleHw.text!, des: descriptHw.text!)
+        HomeWork.saveHomeWork(homeWork: newHomeWork)
     }
     
     /*
@@ -32,8 +33,5 @@ class MyProfileViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    
 
 }
-

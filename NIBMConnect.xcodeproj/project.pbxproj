@@ -15,6 +15,9 @@
 		4D63F0EB22913E1400461C99 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63F0EA22913E1400461C99 /* HomeViewController.swift */; };
 		4D63F14122916CF400461C99 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63F14022916CF400461C99 /* LoginViewController.swift */; };
 		4D63F14422916D2C00461C99 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D63F14322916D2C00461C99 /* LandingViewController.swift */; };
+		B135C15122948831001CE3DE /* StudentsDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135C15022948831001CE3DE /* StudentsDetailTableViewCell.swift */; };
+		B135C153229489AB001CE3DE /* StudentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135C152229489AB001CE3DE /* StudentsModel.swift */; };
+		B1A28436229DCDA300E816C6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A28435229DCDA300E816C6 /* DetailViewController.swift */; };
 		B1C26A7D22929FDA00EC597A /* HomeWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C26A7C22929FDA00EC597A /* HomeWorkViewController.swift */; };
 		B1C26A7F2292A01500EC597A /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C26A7E2292A01500EC597A /* ForgotPasswordViewController.swift */; };
 		B1C26A812292A02A00EC597A /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C26A802292A02A00EC597A /* StudentViewController.swift */; };
@@ -25,7 +28,10 @@
 		B1C26A8B2292A0F800EC597A /* HomeWork.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C26A8A2292A0F800EC597A /* HomeWork.storyboard */; };
 		B1C26A8F2292A79800EC597A /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C26A8E2292A79800EC597A /* MyProfileViewController.swift */; };
 		B1C26A932292C3F700EC597A /* AppTempData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C26A922292C3F700EC597A /* AppTempData.swift */; };
-		B1C26A952292C55500EC597A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1C26A942292C55500EC597A /* GoogleService-Info.plist */; };
+		B1D5AB1B229DE1CD00DCD647 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1D5AB1A229DE1CC00DCD647 /* GoogleService-Info.plist */; };
+		B1E2388D229AA7A10054ADB4 /* AddHomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E2388C229AA7A10054ADB4 /* AddHomeworkViewController.swift */; };
+		B1EA1501229AABDC00CA06FE /* HomeWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EA1500229AABDC00CA06FE /* HomeWork.swift */; };
+		B1EA1504229AAD9000CA06FE /* HomeWorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EA1503229AAD9000CA06FE /* HomeWorkCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,9 @@
 		4D63F0EA22913E1400461C99 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4D63F14022916CF400461C99 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4D63F14322916D2C00461C99 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		B135C15022948831001CE3DE /* StudentsDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsDetailTableViewCell.swift; sourceTree = "<group>"; };
+		B135C152229489AB001CE3DE /* StudentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StudentsModel.swift; path = NIBMConnect/Com/NIBM/View/Students/StudentsModel.swift; sourceTree = SOURCE_ROOT; };
+		B1A28435229DCDA300E816C6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B1C26A7C22929FDA00EC597A /* HomeWorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkViewController.swift; sourceTree = "<group>"; };
 		B1C26A7E2292A01500EC597A /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		B1C26A802292A02A00EC597A /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +57,10 @@
 		B1C26A8A2292A0F800EC597A /* HomeWork.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeWork.storyboard; sourceTree = "<group>"; };
 		B1C26A8E2292A79800EC597A /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		B1C26A922292C3F700EC597A /* AppTempData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppTempData.swift; path = NIBMConnect/Com/NIBM/Controller/MyProfile/AppTempData.swift; sourceTree = SOURCE_ROOT; };
-		B1C26A942292C55500EC597A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B1D5AB1A229DE1CC00DCD647 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B1E2388C229AA7A10054ADB4 /* AddHomeworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHomeworkViewController.swift; sourceTree = "<group>"; };
+		B1EA1500229AABDC00CA06FE /* HomeWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeWork.swift; path = NIBMConnect/Com/NIBM/Controller/Homework/HomeWork.swift; sourceTree = SOURCE_ROOT; };
+		B1EA1503229AAD9000CA06FE /* HomeWorkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkCell.swift; sourceTree = "<group>"; };
 		CB5B899E0EB275BFE715A49C /* Pods-NIBMConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.debug.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.debug.xcconfig"; sourceTree = "<group>"; };
 		CD45910DF4B5E42D320C1D3E /* Pods_NIBMConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NIBMConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE01E785FD24D0E0F42B3802 /* Pods-NIBMConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.release.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,8 +99,8 @@
 		4D63F0D222913C2A00461C99 /* NIBMConnect */ = {
 			isa = PBXGroup;
 			children = (
-				B1C26A942292C55500EC597A /* GoogleService-Info.plist */,
 				4D63F0D322913C2A00461C99 /* AppDelegate.swift */,
+				B1D5AB1A229DE1CC00DCD647 /* GoogleService-Info.plist */,
 				B1C26A7A22929F0400EC597A /* Com */,
 				4D63F0DA22913C2B00461C99 /* Assets.xcassets */,
 				4D63F0DF22913C2B00461C99 /* Info.plist */,
@@ -100,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				B1C26A922292C3F700EC597A /* AppTempData.swift */,
+				B135C152229489AB001CE3DE /* StudentsModel.swift */,
+				B1EA1500229AABDC00CA06FE /* HomeWork.swift */,
 			);
 			name = Model;
 			path = ../../Model;
@@ -158,6 +172,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B135C14F229487F3001CE3DE /* Students */ = {
+			isa = PBXGroup;
+			children = (
+				B135C15022948831001CE3DE /* StudentsDetailTableViewCell.swift */,
+				B1A28435229DCDA300E816C6 /* DetailViewController.swift */,
+			);
+			path = Students;
+			sourceTree = "<group>";
+		};
 		B1C26A7722929C3C00EC597A /* Student */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,7 +192,9 @@
 		B1C26A7822929C6C00EC597A /* Homework */ = {
 			isa = PBXGroup;
 			children = (
+				B1EA1502229AAD5300CA06FE /* Cell */,
 				B1C26A7C22929FDA00EC597A /* HomeWorkViewController.swift */,
+				B1E2388C229AA7A10054ADB4 /* AddHomeworkViewController.swift */,
 			);
 			path = Homework;
 			sourceTree = "<group>";
@@ -204,6 +229,7 @@
 		B1C26A8C2292A2AD00EC597A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B135C14F229487F3001CE3DE /* Students */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -214,6 +240,14 @@
 				B1C26A8E2292A79800EC597A /* MyProfileViewController.swift */,
 			);
 			path = MyProfile;
+			sourceTree = "<group>";
+		};
+		B1EA1502229AAD5300CA06FE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B1EA1503229AAD9000CA06FE /* HomeWorkCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		FD71C988DFBA3F9AC5BFC71C /* Frameworks */ = {
@@ -287,7 +321,7 @@
 			files = (
 				4D63F0DE22913C2B00461C99 /* LaunchScreen.storyboard in Resources */,
 				4D63F0DB22913C2B00461C99 /* Assets.xcassets in Resources */,
-				B1C26A952292C55500EC597A /* GoogleService-Info.plist in Resources */,
+				B1D5AB1B229DE1CD00DCD647 /* GoogleService-Info.plist in Resources */,
 				4D63F0D922913C2A00461C99 /* Main.storyboard in Resources */,
 				B1C26A852292A0B900EC597A /* Login.storyboard in Resources */,
 				B1C26A892292A0E500EC597A /* MyProfile.storyboard in Resources */,
@@ -312,6 +346,8 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -321,6 +357,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,9 +421,15 @@
 				4D63F0D422913C2A00461C99 /* AppDelegate.swift in Sources */,
 				B1C26A7F2292A01500EC597A /* ForgotPasswordViewController.swift in Sources */,
 				B1C26A7D22929FDA00EC597A /* HomeWorkViewController.swift in Sources */,
+				B135C15122948831001CE3DE /* StudentsDetailTableViewCell.swift in Sources */,
+				B1EA1504229AAD9000CA06FE /* HomeWorkCell.swift in Sources */,
+				B135C153229489AB001CE3DE /* StudentsModel.swift in Sources */,
+				B1E2388D229AA7A10054ADB4 /* AddHomeworkViewController.swift in Sources */,
+				B1EA1501229AABDC00CA06FE /* HomeWork.swift in Sources */,
 				4D63F14422916D2C00461C99 /* LandingViewController.swift in Sources */,
 				B1C26A812292A02A00EC597A /* StudentViewController.swift in Sources */,
 				B1C26A8F2292A79800EC597A /* MyProfileViewController.swift in Sources */,
+				B1A28436229DCDA300E816C6 /* DetailViewController.swift in Sources */,
 				B1C26A932292C3F700EC597A /* AppTempData.swift in Sources */,
 				4D63F0EB22913E1400461C99 /* HomeViewController.swift in Sources */,
 			);

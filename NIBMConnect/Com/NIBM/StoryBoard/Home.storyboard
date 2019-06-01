@@ -13,31 +13,170 @@
         <!--Home View Controller-->
         <scene sceneID="1SC-6T-D5L">
             <objects>
-                <viewController id="2sN-1S-UKS" customClass="HomeViewController" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="HomeViewController" storyboardIdentifier="HomeViewController" id="2sN-1S-UKS" customClass="HomeViewController" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B4C-6p-lgL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ds1-rN-NpB" customClass="DesignableButton" customModule="NIBMConnect" customModuleProvider="target">
+                                <rect key="frame" x="32" y="133" width="350" height="160"/>
+                                <color key="backgroundColor" red="0.44445518740000001" green="0.89512478370000004" blue="0.92554211620000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="3E0-nJ-da7"/>
+                                    <constraint firstAttribute="width" constant="350" id="nf1-LX-FfT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-100"/>
+                                <state key="normal" title="My Profile">
+                                    <color key="titleColor" red="0.00082706441010000004" green="0.17043998739999999" blue="0.61421319799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnProfile:" destination="2sN-1S-UKS" eventType="touchUpInside" id="Xou-EI-XmK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vz7-o4-K31" customClass="DesignableButton" customModule="NIBMConnect" customModuleProvider="target">
+                                <rect key="frame" x="32" y="368" width="350" height="160"/>
+                                <color key="backgroundColor" red="0.44445518740000001" green="0.89512478370000004" blue="0.92554211620000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="Cdz-Oa-mgk"/>
+                                    <constraint firstAttribute="width" constant="350" id="qh0-Yy-FfD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-100"/>
+                                <state key="normal" title="Student">
+                                    <color key="titleColor" red="0.00082706441010000004" green="0.17043998739999999" blue="0.61421319799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="studentAction:" destination="2sN-1S-UKS" eventType="touchUpInside" id="Q7Z-Ex-Ewr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5Y-ja-NLH" customClass="DesignableButton" customModule="NIBMConnect" customModuleProvider="target">
+                                <rect key="frame" x="32" y="603" width="350" height="160"/>
+                                <color key="backgroundColor" red="0.44445518740000001" green="0.89512478370000004" blue="0.92554211620000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="Tuj-is-9eC"/>
+                                    <constraint firstAttribute="height" constant="160" id="cVL-7Y-Osn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-100"/>
+                                <state key="normal" title="Home Work">
+                                    <color key="titleColor" red="0.00082706441010000004" green="0.17043998739999999" blue="0.61421319799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="homework:" destination="2sN-1S-UKS" eventType="touchUpInside" id="syn-rj-pfE"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="male-avatar-profile-picture-vector-10211761" translatesAutoresizingMaskIntoConstraints="NO" id="MTO-F5-Kjh">
+                                <rect key="frame" x="162" y="150" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="GEk-sc-8EG"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Students" translatesAutoresizingMaskIntoConstraints="NO" id="aiQ-5V-QZY">
+                                <rect key="frame" x="162" y="385" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="J7N-x0-imq"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Notebook" translatesAutoresizingMaskIntoConstraints="NO" id="tUe-rX-9NG">
+                                <rect key="frame" x="162" y="619" width="90" height="90"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26621069019999999" green="0.72120260410000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ds1-rN-NpB" firstAttribute="top" secondItem="dvK-cC-wOU" secondAttribute="top" constant="45" id="6KN-1Z-jRb"/>
+                            <constraint firstItem="dvK-cC-wOU" firstAttribute="trailing" secondItem="Vz7-o4-K31" secondAttribute="trailing" constant="32" id="BSW-SN-3Vj"/>
+                            <constraint firstItem="Ds1-rN-NpB" firstAttribute="leading" secondItem="dvK-cC-wOU" secondAttribute="leading" constant="32" id="FJH-VE-Dvn"/>
+                            <constraint firstItem="tUe-rX-9NG" firstAttribute="top" secondItem="Vz7-o4-K31" secondAttribute="bottom" constant="91" id="HB1-4D-BhX"/>
+                            <constraint firstItem="MTO-F5-Kjh" firstAttribute="centerX" secondItem="Ds1-rN-NpB" secondAttribute="centerX" id="HzM-qq-fj9"/>
+                            <constraint firstItem="k5Y-ja-NLH" firstAttribute="top" secondItem="Vz7-o4-K31" secondAttribute="bottom" constant="75" id="IMU-LF-oEO"/>
+                            <constraint firstItem="aiQ-5V-QZY" firstAttribute="leading" secondItem="MTO-F5-Kjh" secondAttribute="leading" id="MjX-O1-SEX"/>
+                            <constraint firstItem="MTO-F5-Kjh" firstAttribute="leading" secondItem="dvK-cC-wOU" secondAttribute="leading" constant="162" id="PBU-8v-D1m"/>
+                            <constraint firstItem="k5Y-ja-NLH" firstAttribute="leading" secondItem="dvK-cC-wOU" secondAttribute="leading" constant="32" id="Qbz-q4-ggZ"/>
+                            <constraint firstItem="MTO-F5-Kjh" firstAttribute="top" secondItem="dvK-cC-wOU" secondAttribute="top" constant="62" id="RwW-e1-I84"/>
+                            <constraint firstItem="dvK-cC-wOU" firstAttribute="trailing" secondItem="k5Y-ja-NLH" secondAttribute="trailing" constant="32" id="SMo-1V-ryq"/>
+                            <constraint firstItem="aiQ-5V-QZY" firstAttribute="top" secondItem="Ds1-rN-NpB" secondAttribute="bottom" constant="92" id="SkL-0X-w9h"/>
+                            <constraint firstItem="dvK-cC-wOU" firstAttribute="trailing" secondItem="Ds1-rN-NpB" secondAttribute="trailing" constant="32" id="YK7-Vl-k11"/>
+                            <constraint firstItem="Vz7-o4-K31" firstAttribute="top" secondItem="Ds1-rN-NpB" secondAttribute="bottom" constant="75" id="bQu-Ph-PSj"/>
+                            <constraint firstItem="aiQ-5V-QZY" firstAttribute="trailing" secondItem="tUe-rX-9NG" secondAttribute="trailing" id="fTZ-BS-Dq8"/>
+                            <constraint firstItem="aiQ-5V-QZY" firstAttribute="leading" secondItem="tUe-rX-9NG" secondAttribute="leading" id="jAH-mQ-rVy"/>
+                            <constraint firstItem="Vz7-o4-K31" firstAttribute="leading" secondItem="dvK-cC-wOU" secondAttribute="leading" constant="32" id="ltC-zT-GMS"/>
+                            <constraint firstItem="dvK-cC-wOU" firstAttribute="bottom" secondItem="tUe-rX-9NG" secondAttribute="bottom" constant="153" id="qI3-mJ-5OQ"/>
+                            <constraint firstItem="aiQ-5V-QZY" firstAttribute="trailing" secondItem="MTO-F5-Kjh" secondAttribute="trailing" id="si7-31-d97"/>
+                            <constraint firstItem="dvK-cC-wOU" firstAttribute="bottom" secondItem="k5Y-ja-NLH" secondAttribute="bottom" constant="99" id="yDb-B8-7FS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dvK-cC-wOU"/>
                     </view>
-                    <navigationItem key="navigationItem" id="lfl-px-Xbu"/>
+                    <navigationItem key="navigationItem" id="lfl-px-Xbu">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="LIx-iR-Deh">
+                            <connections>
+                                <action selector="signOut:" destination="2sN-1S-UKS" id="umr-d0-XFM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <segue destination="7iQ-Jy-TaT" kind="show" identifier="showStudents" id="a2U-tz-Bhr"/>
+                        <outlet property="hwImg" destination="tUe-rX-9NG" id="jjP-7E-Gcf"/>
+                        <outlet property="profileImg" destination="MTO-F5-Kjh" id="UgT-Ek-QyK"/>
+                        <outlet property="signOut" destination="LIx-iR-Deh" id="bFF-kA-PX4"/>
+                        <outlet property="studentsImg" destination="aiQ-5V-QZY" id="sKP-Nt-jAQ"/>
                         <segue destination="yjz-4d-bU9" kind="show" identifier="showMyProfile" id="Gz9-L8-7tT"/>
-                        <segue destination="3of-c2-bYd" kind="show" identifier="showHomework" id="XZk-Kg-PrV"/>
+                        <segue destination="kKL-HE-god" kind="show" identifier="showStudents" id="THa-P6-uI3"/>
+                        <segue destination="nwX-ed-Ckq" kind="show" identifier="showHomework" id="hyN-rS-HtJ"/>
+                        <segue destination="y9Z-ey-Ve6" kind="show" identifier="showLogin" id="11E-NN-VQR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6QC-JZ-s8F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937.68115942028987" y="142.63392857142856"/>
+            <point key="canvasLocation" x="817" y="143"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="aFI-vM-Zpg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="y9Z-ey-Ve6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mPg-cp-7Ub" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1489" y="-201"/>
         </scene>
         <!--Students-->
-        <scene sceneID="06r-b9-Ets">
+        <scene sceneID="auZ-ir-Qu2">
             <objects>
-                <viewControllerPlaceholder storyboardName="Students" id="7iQ-Jy-TaT" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h9V-sM-tse" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Students" id="kKL-HE-god" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gCt-I8-V6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1693" y="-112"/>
+            <point key="canvasLocation" x="1502" y="-103"/>
         </scene>
         <!--MyProfile-->
         <scene sceneID="1K9-N9-JZd">
@@ -45,15 +184,15 @@
                 <viewControllerPlaceholder storyboardName="MyProfile" id="yjz-4d-bU9" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="utc-KU-Yb6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1719" y="52"/>
+            <point key="canvasLocation" x="1422" y="129"/>
         </scene>
         <!--HomeWork-->
-        <scene sceneID="8qh-Mh-dxg">
+        <scene sceneID="pR3-66-HeN">
             <objects>
-                <viewControllerPlaceholder storyboardName="HomeWork" id="3of-c2-bYd" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tvP-n1-jej" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="HomeWork" id="nwX-ed-Ckq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LjC-lv-A7A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1725" y="303"/>
+            <point key="canvasLocation" x="1470" y="312"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6nx-hg-JEd">
@@ -71,7 +210,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRf-LQ-UsC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="27.536231884057973" y="142.63392857142856"/>
+            <point key="canvasLocation" x="-48" y="143"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Notebook" width="1300" height="1300"/>
+        <image name="Students" width="900" height="700"/>
+        <image name="male-avatar-profile-picture-vector-10211761" width="900" height="900"/>
+    </resources>
 </document>

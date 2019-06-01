@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GPm-wf-wh5">
-    <device id="retina6_1" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IGx-RV-7Ze">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,34 +15,95 @@
             <objects>
                 <viewController id="IGx-RV-7Ze" customClass="MyProfileViewController" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F5a-A1-5H3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="National_Institute_of_Business_Management_Logo" highlightedImage="National_Institute_of_Business_Management_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Y26-hY-0XH">
+                                <rect key="frame" x="67" y="59" width="241" height="245"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colombo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hav-aE-mVk">
+                                <rect key="frame" x="37.666666666666657" y="423.33333333333331" width="300" height="32.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="gTT-hy-DXj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1994/12/31" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOl-Dg-f0R">
+                                <rect key="frame" x="37.666666666666657" y="505.66666666666669" width="300" height="32.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Uvc-qM-PHz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 Years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9h-Lr-u57">
+                                <rect key="frame" x="37.666666666666657" y="588" width="300" height="32.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="4fH-rh-xFR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0754407105" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6C-NB-ia2">
+                                <rect key="frame" x="37.666666666666657" y="676" width="300" height="31.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="4cZ-gN-AUu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buddhika Ayesh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWN-zB-iW5">
+                                <rect key="frame" x="37.666666666666657" y="341" width="300" height="32.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="7Ck-Vt-ttz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26621069019999999" green="0.72120260410000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="v9h-Lr-u57" firstAttribute="centerX" secondItem="F5a-A1-5H3" secondAttribute="centerX" id="5gB-v4-zeP"/>
+                            <constraint firstItem="MOl-Dg-f0R" firstAttribute="centerX" secondItem="F5a-A1-5H3" secondAttribute="centerX" id="9Cf-LL-3DC"/>
+                            <constraint firstItem="Y6C-NB-ia2" firstAttribute="centerX" secondItem="F5a-A1-5H3" secondAttribute="centerX" id="Azo-9s-1Vk"/>
+                            <constraint firstItem="NWN-zB-iW5" firstAttribute="leading" secondItem="Hav-aE-mVk" secondAttribute="leading" id="DSf-uV-5fc"/>
+                            <constraint firstItem="Y26-hY-0XH" firstAttribute="centerX" secondItem="F5a-A1-5H3" secondAttribute="centerX" id="DrH-Cq-nMH"/>
+                            <constraint firstItem="Y6C-NB-ia2" firstAttribute="top" secondItem="v9h-Lr-u57" secondAttribute="bottom" constant="55.666666666666629" id="HAY-rM-zOR"/>
+                            <constraint firstItem="Y26-hY-0XH" firstAttribute="leading" secondItem="Ev0-Iq-8jl" secondAttribute="leading" constant="67" id="NVC-DY-KZK"/>
+                            <constraint firstItem="Hav-aE-mVk" firstAttribute="top" secondItem="NWN-zB-iW5" secondAttribute="bottom" constant="50" id="VBd-LW-QzX"/>
+                            <constraint firstItem="NWN-zB-iW5" firstAttribute="top" secondItem="F5a-A1-5H3" secondAttribute="top" constant="341" id="WhE-2e-HVv"/>
+                            <constraint firstItem="MOl-Dg-f0R" firstAttribute="top" secondItem="Hav-aE-mVk" secondAttribute="bottom" constant="50" id="ibn-F0-aQT"/>
+                            <constraint firstItem="v9h-Lr-u57" firstAttribute="top" secondItem="MOl-Dg-f0R" secondAttribute="bottom" constant="50" id="jeb-IW-9EC"/>
+                            <constraint firstItem="Hav-aE-mVk" firstAttribute="centerX" secondItem="F5a-A1-5H3" secondAttribute="centerX" id="mg4-eh-Mh4"/>
+                            <constraint firstItem="NWN-zB-iW5" firstAttribute="top" secondItem="Y26-hY-0XH" secondAttribute="bottom" constant="37" id="tiw-qG-SOj"/>
+                            <constraint firstItem="Y26-hY-0XH" firstAttribute="top" secondItem="Ev0-Iq-8jl" secondAttribute="top" constant="15" id="van-cp-zxT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ev0-Iq-8jl"/>
                     </view>
-                    <navigationItem key="navigationItem" id="gF5-zq-1xh"/>
+                    <navigationItem key="navigationItem" id="gF5-zq-1xh">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="c3z-d5-Ie9">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EDO-W1-Usr">
+                                <rect key="frame" x="16" y="7" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="close:" destination="IGx-RV-7Ze" eventType="touchUpInside" id="Zzz-QQ-WMz"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="04m-aS-JYm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="79.6875"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="hij-vs-lmc">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GPm-wf-wh5" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gn4-8i-cSj">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="IGx-RV-7Ze" kind="relationship" relationship="rootViewController" id="a5c-m6-6ZJ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qqL-eh-GeM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+            <point key="canvasLocation" x="490" y="78"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="National_Institute_of_Business_Management_Logo" width="300" height="172"/>
+    </resources>
 </document>

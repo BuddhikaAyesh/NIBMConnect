@@ -21,8 +21,8 @@ class LandingViewController: UIViewController {
             if user == nil {
                 self.performSegue(withIdentifier: "showLogin", sender: nil)
             } else {
-                //                self.performSegue(withIdentifier: "showHome", sender: nil)
-                self.performSegue(withIdentifier: "showLogin", sender: nil)
+                
+                self.performSegue(withIdentifier: "showHome", sender: nil)
             }
         }
         
