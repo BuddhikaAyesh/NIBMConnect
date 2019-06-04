@@ -113,15 +113,15 @@
         <scene sceneID="Ccl-VG-WIH">
             <objects>
                 <viewController id="uVl-Or-hjI" customClass="ForgotPasswordViewController" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="tRl-6x-7Go">
+                    <view key="view" contentMode="scaleToFill" id="tRl-6x-7Go">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Get Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MWr-Kh-Y5v" userLabel="ForgotPasswordTxt">
-                                <rect key="frame" x="20" y="294" width="374" height="60"/>
+                                <rect key="frame" x="20" y="294" width="374" height="50"/>
                                 <color key="backgroundColor" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="tbE-bQ-Xh1"/>
+                                    <constraint firstAttribute="height" constant="50" id="6Bt-2R-zwl"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
@@ -130,9 +130,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLd-87-7RK">
                                 <rect key="frame" x="107" y="454" width="200" height="41"/>
                                 <color key="backgroundColor" red="0.13262744230000001" green="0.1144090119" blue="0.074580852010000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="Gpa-pY-cNM"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Get Password">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -156,11 +153,12 @@
                         <color key="backgroundColor" red="0.26621069019999999" green="0.72120260410000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pLd-87-7RK" firstAttribute="centerX" secondItem="tRl-6x-7Go" secondAttribute="centerX" id="1Br-Wq-m8d"/>
+                            <constraint firstItem="pLd-87-7RK" firstAttribute="leading" secondItem="H8c-dp-a4C" secondAttribute="leading" constant="107" id="72n-T7-M3J"/>
+                            <constraint firstItem="H8c-dp-a4C" firstAttribute="bottom" secondItem="pLd-87-7RK" secondAttribute="bottom" constant="367" id="8Yg-3N-ZL8"/>
                             <constraint firstItem="MWr-Kh-Y5v" firstAttribute="leading" secondItem="H8c-dp-a4C" secondAttribute="leading" constant="20" id="Fle-Wg-d3K"/>
-                            <constraint firstItem="MWr-Kh-Y5v" firstAttribute="centerY" secondItem="tRl-6x-7Go" secondAttribute="centerY" id="GtQ-Vl-zTo"/>
+                            <constraint firstItem="H8c-dp-a4C" firstAttribute="trailing" secondItem="pLd-87-7RK" secondAttribute="trailing" constant="107" id="GCF-O4-bSU"/>
                             <constraint firstItem="H8c-dp-a4C" firstAttribute="trailing" secondItem="MWr-Kh-Y5v" secondAttribute="trailing" constant="20" id="HIu-8i-Byk"/>
                             <constraint firstItem="MWr-Kh-Y5v" firstAttribute="centerX" secondItem="tRl-6x-7Go" secondAttribute="centerX" id="xry-K0-aVT"/>
-                            <constraint firstItem="pLd-87-7RK" firstAttribute="top" secondItem="MWr-Kh-Y5v" secondAttribute="bottom" constant="100" id="yb7-Rm-dsZ"/>
                             <constraint firstItem="MWr-Kh-Y5v" firstAttribute="top" secondItem="H8c-dp-a4C" secondAttribute="top" constant="250" id="yed-nz-4b3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="H8c-dp-a4C"/>
